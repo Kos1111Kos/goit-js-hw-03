@@ -1,10 +1,8 @@
 function slugify(title) {
-  const lowerCaseTitle = title.toLowerCase(); // перетворити рядок на нижній регістр
-  const words = lowerCaseTitle.split(" "); // розбити рядок на масив слів
-  const slug = words.join("-"); // об'єднати слова у рядок зі знаком мінус між ними
-  return slug; // повернути отриманий рядок
-
-  // return title.toLowerCase().split(" ").join("-");
+  const lowerCaseTitle = title.toLowerCase();
+  const words = lowerCaseTitle.split(" ");
+  const slug = words.join("-");
+  return slug;
 }
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
